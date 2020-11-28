@@ -24,13 +24,14 @@ export class InicioSesionComponent implements OnInit {
         alert("Bienvenido usuario: "+datos[1]);
         this.iniciosesion.sesioniniciada();
         this.iniciosesion.tipousuario();
+        //this.iniciosesion.idusuario();
         this.router.navigate(['/arduino']);
       }, 
       err => {
         console.log(err)
         alert("Usuario o contraseña incorrecto");
       }
-    );
+    )
   }
 
 }
